@@ -1,5 +1,15 @@
 #ABC454-C 
-#verdict: WA
+
+#verdict: AC
+
+#I was sure that my logic was all correct. So I looked up to the editorial.
+#I found that they used bfs algorithm whereas I used dfs algorithm. So no way to get RE.
+#Then I asked for help from Gemini. 
+#I came to konw that python has default recursion depth limit. We can modify that using sys.recursionlmiit
+
+
+import sys
+sys.setrecursionlimit(300_005)
 
 n, m = map(int, input().split())
 
